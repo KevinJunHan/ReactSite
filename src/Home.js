@@ -3,7 +3,7 @@ import reactDom from "react-dom";
 import "./App.css";
 import { useSpring, animated, interpolate } from "react-spring";
 
-function Portfolio() {
+function Home() {
   const props = useSpring({
     to: [
       { opacity: 1, color: "bisque" },
@@ -15,10 +15,11 @@ function Portfolio() {
   return (
     <div>
       <animated.h1 style={props} className="header">
-        Porfolio
+        {" "}
+        Welcome{" "}
       </animated.h1>
     </div>
   );
 }
 
-export default Portfolio;
+export default Home;

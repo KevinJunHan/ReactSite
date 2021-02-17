@@ -6,6 +6,7 @@ import user from "./Images/user.png";
 import folder from "./Images/folder.png";
 import contract from "./Images/contract.png";
 import { render } from "@testing-library/react";
+import { motion } from "framer-motion";
 
 function hello() {
   return alert("Clicked");
@@ -65,10 +66,26 @@ class Nav extends React.Component {
               <img className="folder" src={folder} alt="folder" />
             </li>
           </NavLink>
-          <li>
+
+          {/* <li>
             Hire_Me
             <img className="contract" src={contract} alt="contract" />
-          </li>
+          </li> */}
+          <NavLink
+            className="abt"
+            style={navStyle}
+            to="/HireMe"
+            activeClassName="selected"
+            activeStyle={{
+              fontWeight: "bold",
+              color: "bisque",
+            }}
+          >
+            <li>
+              Hire Me
+              <img className="contract" src={contract} alt="contract" />
+            </li>
+          </NavLink>
         </ul>
       </nav>
     );

@@ -7,19 +7,20 @@ import HireMe from "./HireMe";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/hireme" component={HireMe} />
-        </Switch>
-      </div>
-    </Router>
-  );
+	return (
+		<Router>
+			<div className="App">
+				<Nav />
+				<Switch>
+					<Route exact path="/ReactSite" component={Home} />
+					<Route exact path="/" component={Home} />
+					<Route path="/about" component={About} />
+					<Route path="/portfolio" component={Portfolio} />
+					<Route path="/hireme" component={HireMe} />
+				</Switch>
+			</div>
+		</Router>
+	);
 }
 
 // function Home() {

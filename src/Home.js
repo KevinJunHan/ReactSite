@@ -4,22 +4,26 @@ import "./App.css";
 import { useSpring, animated, interpolate } from "react-spring";
 
 function Home() {
-  const props = useSpring({
-    to: [
-      { opacity: 1, color: "bisque" },
-      { opacity: 0.5, color: "brown" },
-    ],
-    from: { opacity: 1, color: "slategrey" },
-  });
+	const props = useSpring({
+		to: [
+			{ opacity: 1, color: "bisque" },
+			{ opacity: 0.5, color: "brown" },
+		],
+		from: { opacity: 1, color: "slategrey" },
+	});
 
-  return (
-    <div>
-      <animated.h1 style={props} className="header">
-        {" "}
-        Welcome{" "}
-      </animated.h1>
-    </div>
-  );
+	return (
+		<div>
+			<animated.h1 style={props} className="header">
+				Welcome
+			</animated.h1>
+			<div className="WelcomeContainer">
+				<h2 className="genericText">
+					Click on the icons above to navigate!
+				</h2>
+			</div>
+		</div>
+	);
 }
 
 export default Home;

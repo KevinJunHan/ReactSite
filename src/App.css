@@ -2,223 +2,233 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
 
 .App {
-  text-align: start;
+	text-align: start;
 }
 * {
-  margin: 0;
+	margin: 0;
 }
 
 button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+}
+
+.players {
+	display: flex;
+	flex-direction: row;
 }
 
 .aboutBox {
-  display: flex;
-  width: 70%;
+	display: flex;
+	width: 500px;
+	background: rgb(255, 255, 219);
 }
 
 .rightSection {
-  font-family: "Montserrat", sans-serif;
-  padding-top: 40px;
-  padding-left: 100px;
-  width: 150px;
+	font-family: "Montserrat", sans-serif;
+	padding-top: 250px;
+	padding-left: 100px;
+	width: 150px;
 }
 
 .skillsSection {
-  margin-left: -40px;
-  color: dodgerblue;
-  display: flex;
-  flex-direction: row;
-  cursor: default;
-  width: 350px;
-  height: 80%;
-  background: #012340;
+	margin-left: -40px;
+	color: dodgerblue;
+	display: flex;
+	flex-direction: row;
+	cursor: default;
+	width: 350px;
+	height: 600px;
+	background: #012340;
 
-  /* box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2); */
+	/* box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2); */
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .skills .box {
-  position: relative;
-  width: 100px;
-  height: 45px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  background: white;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	width: 100px;
+	height: 45px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	background: white;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .skills .box:hover {
-  background: gold;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+	background: gold;
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .programs .box {
-  position: relative;
-  width: 120px;
-  height: 45px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  background: white;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	width: 120px;
+	height: 45px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	background: white;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .programs .box:hover {
-  background: midnightblue;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+	background: midnightblue;
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .programs {
-  color: brown;
+	color: brown;
 }
 
 .HireContainer {
-  margin-top: 10px;
-  margin-left: 40px;
-  padding: 10px;
-  color: dodgerblue;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  cursor: default;
-  width: 350px;
-  height: 145px;
+	margin-top: 10px;
+	margin-left: 40px;
+	padding: 10px;
+	color: dodgerblue;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	cursor: default;
+	width: 350px;
+	height: 145px;
 
-  background: #012340;
+	background: #012340;
 }
 
 .HireContainer .HCTop {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
 }
 
 .HireContainer .HCBtm {
-  padding-top: 100px;
+	padding-top: 100px;
+}
+
+.WelcomeContainer {
+	padding-left: 40px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 15vh;
-  background: #012340;
-  color: rgb(97, 97, 97);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 15vh;
+	background: #012340;
+	color: rgb(97, 97, 97);
 }
 
 .logo {
-  margin-left: 0;
-  width: 150px;
-  height: 80px;
+	margin-left: 0;
+	width: 150px;
+	height: 80px;
 }
 
 .nav-links {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
 }
 
 .abt:hover {
-  opacity: 0.8;
-  font-size: 35px;
+	opacity: 0.8;
+	font-size: 35px;
 }
 
 .header {
-  text-decoration: underline;
-  padding-top: 20px;
-  padding-left: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 70px;
-  color: bisque;
-  cursor: crosshair;
+	text-decoration: underline;
+	padding-top: 20px;
+	padding-left: 40px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 70px;
+	color: bisque;
+	cursor: crosshair;
 }
 
 .header:hover {
-  padding-top: 20px;
-  padding-left: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 70px;
-  color: gold;
+	padding-top: 20px;
+	padding-left: 40px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 70px;
+	color: gold;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 .geneList {
-  padding-top: 1000px;
+	padding-top: 1000px;
 }
 
 .csg {
-  padding: 0;
-  height: 150px;
-  width: 200px;
+	padding: 0;
+	height: 150px;
+	width: 200px;
 }
 
 .user {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
 }
 .user:hover {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
 }
 
 .folder {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
 }
 
 .contract {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
 }
 
 .rea {
-  height: 50px;
-  width: 50px;
+	height: 50px;
+	width: 50px;
 }
 
 .genericText {
-  padding-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  color: green;
+	padding-top: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	color: #012340;
 }
 
 .degreeHead {
-  font-family: "Cinzel", serif;
-  font-size: 24px;
-  color: black;
+	font-family: "Cinzel", serif;
+	font-size: 24px;
+	color: black;
 }
 
 .withDist {
-  font-family: "Cinzel", serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: goldenrod;
+	font-family: "Cinzel", serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: goldenrod;
 }
 
 .withDist:hover {
-  font-family: "Cinzel", serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: gold;
+	font-family: "Cinzel", serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: gold;
 }
 
 .btnUp {
-  /* opacity: 0.5; */
+	/* opacity: 0.5; */
 }

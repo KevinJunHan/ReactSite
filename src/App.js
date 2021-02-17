@@ -13,6 +13,7 @@ function App() {
 				<Nav />
 				<Switch>
 					<Route exact path="/" component={Home} />
+					<Route path="/ReactSite" component={About} />
 					<Route path="/about" component={About} />
 					<Route path="/portfolio" component={Portfolio} />
 					<Route path="/hireme" component={HireMe} />

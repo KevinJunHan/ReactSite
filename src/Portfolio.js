@@ -32,7 +32,7 @@ function Portfolio() {
 					/>
 				</div>
 				<div className="playerOnRight">
-					<h1 className="genericText">FYP Mobile App:</h1>
+					<h1 className="genericText">FYP Mobile App</h1>
 					<ReactPlayer
 						width="400px"
 						height="300px"

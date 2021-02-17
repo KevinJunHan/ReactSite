@@ -1,8 +1,8 @@
 {
+	"homepage": "https://KevinJunHan.github.io/ReactSite",
 	"name": "react-website",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://github.com/KevinJunHan/ReactSite.git",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.11.9",
 		"@testing-library/react": "^11.2.5",

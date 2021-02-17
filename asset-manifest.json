@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/KevinJunHan/ReactSite.git/static/css/main.adcd1955.chunk.css",
+    "main.js": "/KevinJunHan/ReactSite.git/static/js/main.1b78dcde.chunk.js",
+    "main.js.map": "/KevinJunHan/ReactSite.git/static/js/main.1b78dcde.chunk.js.map",
+    "runtime-main.js": "/KevinJunHan/ReactSite.git/static/js/runtime-main.e4064699.js",
+    "runtime-main.js.map": "/KevinJunHan/ReactSite.git/static/js/runtime-main.e4064699.js.map",
+    "static/js/2.549bf006.chunk.js": "/KevinJunHan/ReactSite.git/static/js/2.549bf006.chunk.js",
+    "static/js/2.549bf006.chunk.js.map": "/KevinJunHan/ReactSite.git/static/js/2.549bf006.chunk.js.map",
+    "static/js/3.d26cb525.chunk.js": "/KevinJunHan/ReactSite.git/static/js/3.d26cb525.chunk.js",
+    "static/js/3.d26cb525.chunk.js.map": "/KevinJunHan/ReactSite.git/static/js/3.d26cb525.chunk.js.map",
+    "index.html": "/KevinJunHan/ReactSite.git/index.html",
+    "static/css/main.adcd1955.chunk.css.map": "/KevinJunHan/ReactSite.git/static/css/main.adcd1955.chunk.css.map",
+    "static/js/2.549bf006.chunk.js.LICENSE.txt": "/KevinJunHan/ReactSite.git/static/js/2.549bf006.chunk.js.LICENSE.txt",
+    "static/media/logo.d45e3b5c.png": "/KevinJunHan/ReactSite.git/static/media/logo.d45e3b5c.png",
+    "static/media/uow.4353f2e4.gif": "/KevinJunHan/ReactSite.git/static/media/uow.4353f2e4.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4064699.js",
+    "static/js/2.549bf006.chunk.js",
+    "static/css/main.adcd1955.chunk.css",
+    "static/js/main.1b78dcde.chunk.js"
+  ]
+}

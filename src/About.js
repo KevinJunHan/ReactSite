@@ -25,7 +25,7 @@ function About() {
 				</animated.h1>
 
 				<ul>
-					<li className="genericText">
+					<li className="genericText" title="Kevin is my name">
 						<Highlighter
 							highlightClassName="YourHighlightClass"
 							searchWords={["kevin"]}
@@ -87,20 +87,34 @@ function About() {
 				<h1>Skills:</h1>
 				<div className="skillsSection">
 					<ul className="skills">
+						<li class="box" title="This site was created with react!">
+							React
+						</li>
 						<li class="box">C++</li>
 						<li class="box">Java</li>
 						<li class="box">HTML</li>
-						<li class="box">React</li>
 						<li class="box">JavaScript</li>
 						<li class="box">SQL</li>
 					</ul>
 					<ul className="programs">
-						<li class="box">Git</li>
-						<li class="box">Unity3D</li>
-						<li class="box">Photoshop</li>
-						<li class="box">Adobe Xd</li>
-						<li class="box">AD Maya</li>
-						<li class="box">AD Mudbox</li>
+						<li class="box" title="Used for Software Version Control">
+							Git
+						</li>
+						<li class="box" title="Used for game developing">
+							Unity3D
+						</li>
+						<li class="box" title="Used for design work">
+							Photoshop
+						</li>
+						<li class="box" title="Used for wire framing">
+							Adobe Xd
+						</li>
+						<li class="box" title="3D modelling">
+							AD Maya
+						</li>
+						<li class="box" title="Advance 3D modelling">
+							AD Mudbox
+						</li>
 					</ul>
 				</div>
 			</div>

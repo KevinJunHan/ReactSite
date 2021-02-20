@@ -37,6 +37,7 @@ class Nav extends React.Component {
 						to="/About"
 						activeClassName="selected"
 						activeStyle={{
+							border: "2px dotted bisque",
 							fontWeight: "bold",
 							color: "bisque",
 						}}
@@ -52,6 +53,7 @@ class Nav extends React.Component {
 						to="/Portfolio"
 						activeClassName="selected"
 						activeStyle={{
+							border: "2px dotted bisque",
 							fontWeight: "bold",
 							color: "bisque",
 						}}
@@ -72,6 +74,7 @@ class Nav extends React.Component {
 						to="/HireMe"
 						activeClassName="selected"
 						activeStyle={{
+							border: "2px dotted bisque",
 							fontWeight: "bold",
 							color: "bisque",
 						}}

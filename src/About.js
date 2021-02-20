@@ -32,8 +32,9 @@ function About() {
 							autoEscape={true}
 							textToHighlight="Hi I am Kevin, I have"
 						/>
+						<hr />
 					</li>
-					<li> ______________________</li>
+
 					<Degree />
 					{/* <img className="csg" src={uow} alt="uow" /> */}
 					<li className="genericText">

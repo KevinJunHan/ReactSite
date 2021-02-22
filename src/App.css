@@ -169,10 +169,6 @@ ul {
 	list-style: none;
 }
 
-.geneList {
-	padding-top: 1000px;
-}
-
 .csg {
 	padding: 0;
 	height: 150px;
@@ -208,6 +204,11 @@ ul {
 	font-family: "Montserrat", sans-serif;
 	font-size: 20px;
 	color: #012340;
+}
+.geneList {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	color: dodgerblue;
 }
 
 .degreeHead {

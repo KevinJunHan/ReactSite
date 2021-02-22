@@ -18,11 +18,9 @@ function Portfolio() {
 			<animated.h1 style={props} className="header">
 				Porfolio
 			</animated.h1>
+
 			<div className="players">
 				<div className="playerOnLeft">
-					<h1 className="genericText" style={{ color: "dodgerblue" }}>
-						Games developed:
-					</h1>
 					<ReactPlayer
 						width="400px"
 						height="300px"
@@ -30,9 +28,17 @@ function Portfolio() {
 						playing="true"
 						url="www.youtube.com/watch?v=tqNft0iUPHY"
 					/>
+					<h1 className="genericText" style={{ color: "blue" }}>
+						Games programmed:
+					</h1>
+					<ol className="geneList">
+						<li>SnowGo [2D Platform game] </li>
+						<li>Space Survivor [Puzzle solving game] </li>
+						<li>Phrenzy [2D RPG]</li>
+						<li>Pizza Slice [One button game]</li>
+					</ol>
 				</div>
 				<div className="playerOnRight">
-					<h1 className="genericText">FYP (Mobile App)</h1>
 					<ReactPlayer
 						width="400px"
 						height="300px"
@@ -40,6 +46,15 @@ function Portfolio() {
 						playing="true"
 						url="www.youtube.com/watch?v=FiFWPWR3mLs"
 					/>
+					<h1 className="genericText" style={{ color: "blue" }}>
+						FYP TrapLearn (Mobile App)
+						<ul className="geneList">
+							<li>Teaches users trapdoor knapsack cryptosystem</li>
+							<li>Broken into 5 chapters</li>
+							<li>Hands-on simulator</li>
+							<li>Achievement system</li>
+						</ul>
+					</h1>
 				</div>
 			</div>
 		</div>

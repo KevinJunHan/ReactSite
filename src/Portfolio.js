@@ -48,12 +48,18 @@ function Portfolio() {
 					/>
 					<h1 className="genericText" style={{ color: "blue" }}>
 						FYP TrapLearn (Mobile App)
-						<ul className="geneList">
-							<li>Teaches users trapdoor knapsack cryptosystem</li>
+						<ol className="geneList">
+							<li>
+								Teaches users trapdoor{" "}
+								<span>
+									<nobr>knapsack cryptosystem</nobr>
+								</span>
+							</li>
 							<li>Broken into 5 chapters</li>
+							<li>End of chapter quiz</li>
 							<li>Hands-on simulator</li>
 							<li>Achievement system</li>
-						</ul>
+						</ol>
 					</h1>
 				</div>
 			</div>

@@ -52,10 +52,14 @@ function HireMe() {
 	});
 
 	return (
-		<div>
+		<div style={{ width: "400px" }}>
 			<animated.h1 style={props} className="header">
 				Hire Me
 			</animated.h1>
+			<h2 style={{ paddingLeft: "40px" }} className="genericText">
+				Connect with me here or @
+				<span style={{ color: "red" }}> KevinJunHan@outlook.com </span>
+			</h2>
 			<Form></Form>
 		</div>
 	);

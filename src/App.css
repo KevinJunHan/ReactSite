@@ -205,6 +205,14 @@ ul {
 	font-size: 20px;
 	color: #012340;
 }
+
+.genericText2 {
+	padding-top: 1px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	color: #012340;
+}
+
 .geneList {
 	font-family: "Montserrat", sans-serif;
 	font-size: 15px;
@@ -229,6 +237,26 @@ ul {
 	font-weight: bold;
 	font-size: 20px;
 	color: gold;
+}
+
+input[type="text"] {
+	width: 200px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: rgb(212, 212, 212);
+	color: black;
+}
+
+input[type="email"] {
+	width: 200px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: rgb(212, 212, 212);
+	color: black;
 }
 
 .btnUp {

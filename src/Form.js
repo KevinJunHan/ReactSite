@@ -58,7 +58,15 @@ function Form() {
 					</div>
 
 					<div>
-						<input type="submit" value="Send Message" />
+						<input
+							type="submit"
+							value="Send Message"
+							onClick={() => {
+								alert(
+									"Attempting to send (Ensure all fields are accurate)"
+								);
+							}}
+						/>
 					</div>
 				</div>
 			</form>

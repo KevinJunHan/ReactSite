@@ -1,10 +1,26 @@
 import React, { useState, useEffect } from "react";
-import reactDom from "react-dom";
+import ReactDom from "react-dom";
 import "./App.css";
 import { useSpring, animated, interpolate } from "react-spring";
 import ReactPlayer from "react-player";
+import Form from "./Form";
+
+function useWindowSize() {
+	const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
+	useEffect(() => {
+		const handleResize = () => {
+			setSize([window.innerHeight, window.innerWidth]);
+		};
+
+		window.addEventListener("resize", handleResize);
+	}, []);
+
+	return size;
+}
 
 function Portfolio() {
+	const [height, width] = useWindowSize();
+
 	const props = useSpring({
 		to: [
 			{ opacity: 1, color: "bisque" },
@@ -18,8 +34,7 @@ function Portfolio() {
 			<animated.h1 style={props} className="header">
 				Porfolio
 			</animated.h1>
-
-			<div className="players">
+			<div className={width > 843 ? "players" : "players2"}>
 				<div className="playerOnLeft">
 					<ReactPlayer
 						width="400px"

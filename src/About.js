@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Degree from "./Degree";
 import uow from "./Images/uow.gif";
@@ -8,7 +8,22 @@ import Highlighter from "react-highlight-words";
 
 import styled from "styled-components";
 
+function useWindowSize() {
+	const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
+	useEffect(() => {
+		const handleResize = () => {
+			setSize([window.innerHeight, window.innerWidth]);
+		};
+
+		window.addEventListener("resize", handleResize);
+	}, []);
+
+	return size;
+}
+
 function About() {
+	const [height, width] = useWindowSize();
+
 	const props = useSpring({
 		to: [
 			{ opacity: 1, color: "bisque" },
@@ -84,7 +99,7 @@ function About() {
 					</li>
 				</ul>
 			</div>
-			<div className="rightSection">
+			<div className={width > 600 ? "rightSection" : "rightSection2"}>
 				<h1>Skills:</h1>
 				<div className="skillsSection">
 					<ul className="skills">

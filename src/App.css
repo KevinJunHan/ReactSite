@@ -46,6 +46,14 @@ button {
 	width: 150px;
 }
 
+.rightSection2 {
+	opacity: 0.4;
+	font-family: "Montserrat", sans-serif;
+	padding-top: 250px;
+	padding-left: 100px;
+	width: 150px;
+}
+
 .skillsSection {
 	margin-left: -40px;
 	color: dodgerblue;

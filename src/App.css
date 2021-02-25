@@ -19,6 +19,20 @@ button {
 	flex-direction: row;
 }
 
+.players2 {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.playerOnLeft {
+	padding-top: 20px;
+}
+
+.playerOnRight {
+	padding-top: 20px;
+}
+
 .aboutBox {
 	display: flex;
 	width: 500px;

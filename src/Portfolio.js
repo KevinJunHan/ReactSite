@@ -29,12 +29,33 @@ function Portfolio() {
 		from: { opacity: 1, color: "slategrey" },
 	});
 
+	const propsMain = useSpring({
+		to: [{ opacity: 1 }],
+		from: { opacity: 0 },
+		delay: 1100,
+	});
+
+	const propsMain2 = useSpring({
+		to: [{ opacity: 1 }],
+		from: { opacity: 0 },
+		delay: 1600,
+	});
+
+	const propsMain3 = useSpring({
+		to: [{ opacity: 1 }],
+		from: { opacity: 0 },
+		delay: 2000,
+	});
+
 	return (
 		<div>
 			<animated.h1 style={props} className="header">
 				Porfolio
 			</animated.h1>
-			<div className={width > 843 ? "players" : "players2"}>
+			<animated.div
+				style={propsMain}
+				className={width > 843 ? "players" : "players2"}
+			>
 				<div className="playerOnLeft">
 					<ReactPlayer
 						width="400px"
@@ -43,15 +64,15 @@ function Portfolio() {
 						playing="true"
 						url="www.youtube.com/watch?v=tqNft0iUPHY"
 					/>
-					<h1 className="genericText" style={{ color: "blue" }}>
+					<animated.h1 className="genericText" style={propsMain2}>
 						Games programmed:
-					</h1>
-					<ol className="geneList">
+					</animated.h1>
+					<animated.ol className="geneList" style={propsMain3}>
 						<li>SnowGo [2D Platform game] </li>
 						<li>Space Survivor [Puzzle solving game] </li>
 						<li>Phrenzy [2D RPG]</li>
 						<li>Pizza Slice [One button game]</li>
-					</ol>
+					</animated.ol>
 				</div>
 				<div className="playerOnRight">
 					<ReactPlayer
@@ -61,9 +82,9 @@ function Portfolio() {
 						playing="true"
 						url="www.youtube.com/watch?v=FiFWPWR3mLs"
 					/>
-					<h1 className="genericText" style={{ color: "blue" }}>
+					<animated.h1 className="genericText" style={propsMain2}>
 						FYP TrapLearn (Mobile App)
-						<ol className="geneList">
+						<animated.ol className="geneList" style={propsMain3}>
 							<li>
 								Teaches users trapdoor{" "}
 								<span>
@@ -74,10 +95,10 @@ function Portfolio() {
 							<li>End of chapter quiz</li>
 							<li>Hands-on simulator</li>
 							<li>Achievement system</li>
-						</ol>
-					</h1>
+						</animated.ol>
+					</animated.h1>
 				</div>
-			</div>
+			</animated.div>
 		</div>
 	);
 }

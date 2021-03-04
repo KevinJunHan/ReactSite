@@ -46,7 +46,7 @@ function Form() {
 						<textarea
 							id=""
 							name="message"
-							placeholder="E.g You are the perfect candidate, I have a great job offer for you!"
+							placeholder="E.g You are amazing!"
 							style={{
 								marginTop: "15px",
 								paddingTop: "20px",

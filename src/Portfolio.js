@@ -84,19 +84,19 @@ function Portfolio() {
 					/>
 					<animated.h1 className="genericText" style={propsMain2}>
 						FYP TrapLearn (Mobile App)
-						<animated.ol className="geneList" style={propsMain3}>
-							<li>
-								Teaches users trapdoor{" "}
-								<span>
-									<nobr>knapsack cryptosystem</nobr>
-								</span>
-							</li>
-							<li>Broken into 5 chapters</li>
-							<li>End of chapter quiz</li>
-							<li>Hands-on simulator</li>
-							<li>Achievement system</li>
-						</animated.ol>
 					</animated.h1>
+					<animated.ol className="geneList" style={propsMain3}>
+						<li>
+							Teaches users trapdoor{" "}
+							<span>
+								<nobr>knapsack cryptosystem</nobr>
+							</span>
+						</li>
+						<li>Broken into 5 chapters</li>
+						<li>End of chapter quiz</li>
+						<li>Hands-on simulator</li>
+						<li>Achievement system</li>
+					</animated.ol>
 				</div>
 			</animated.div>
 		</div>

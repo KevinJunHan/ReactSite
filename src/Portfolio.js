@@ -4,6 +4,7 @@ import "./App.css";
 import { useSpring, animated, interpolate } from "react-spring";
 import ReactPlayer from "react-player";
 import Form from "./Form";
+import { Button, Alert, Container, Row, Col, Badge } from "react-bootstrap";
 
 function useWindowSize() {
 	const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
@@ -57,6 +58,9 @@ function Portfolio() {
 				className={width > 843 ? "players" : "players2"}
 			>
 				<div className="playerOnLeft">
+					<Badge style={{ color: "white", backgroundColor: "black" }}>
+						Compilation
+					</Badge>
 					<ReactPlayer
 						width="400px"
 						height="300px"
@@ -75,6 +79,9 @@ function Portfolio() {
 					</animated.ol>
 				</div>
 				<div className="playerOnRight">
+					<Badge style={{ color: "white", backgroundColor: "#00f365" }}>
+						New
+					</Badge>
 					<ReactPlayer
 						width="400px"
 						height="300px"

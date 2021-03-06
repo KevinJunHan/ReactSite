@@ -285,12 +285,12 @@ input[type="email"] {
 	/* opacity: 0.5; */
 }
 
-.container {
+.containerm {
 	position: relative;
 	color: white;
 }
 
-.container::after {
+.containerm::after {
 	content: "";
 	opacity: 0.6;
 	background: bisque;
@@ -307,7 +307,7 @@ input[type="email"] {
 	height: 100%;
 }
 
-.container:hover {
+.containerm:hover {
 	filter: blur(5px);
 	opacity: 0.8;
 

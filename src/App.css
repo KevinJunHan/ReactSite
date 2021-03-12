@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
 
+::selection {
+	background-color: rgb(242, 230, 255);
+}
+
 .App {
 	text-align: start;
 }
@@ -157,20 +161,43 @@ nav {
 
 .nav-links {
 	font-family: "Montserrat", sans-serif;
-	font-size: 20px;
+	font-size: max(3.5vw, 8px);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
 }
 
-.abt:hover {
-	opacity: 0.8;
-	font-size: 35px;
+.nav-links .c::before {
+	float: left;
+	opacity: 0;
+	content: "\00bb";
+	text-decoration: none;
+	transition: 2s;
+}
+
+.nav-links .c::after {
+	padding-left: 5px;
+	float: right;
+	opacity: 0;
+	content: "\00ab";
+	text-decoration: none;
+	transition: 2s;
+}
+
+.nav-links .c:hover::before {
+	transition: 1s;
+	opacity: 1;
+}
+
+.nav-links .c:hover::after {
+	transition: 1s;
+	opacity: 1;
 }
 
 .header {
 	text-decoration: underline;
+	letter-spacing: 8px;
 	padding-top: 20px;
 	padding-left: 40px;
 	font-family: "Montserrat", sans-serif;
@@ -198,6 +225,7 @@ ul {
 }
 
 .user {
+	align-content: center;
 	height: 40px;
 	width: 40px;
 }
@@ -333,4 +361,8 @@ body {
 
 .footer:hover {
 	background: #03437c;
+}
+
+.row {
+	padding-bottom: 30px;
 }

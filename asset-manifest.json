@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ReactSite/static/css/main.431db40b.chunk.css",
-    "main.js": "/ReactSite/static/js/main.1ebfe834.chunk.js",
-    "main.js.map": "/ReactSite/static/js/main.1ebfe834.chunk.js.map",
+    "main.js": "/ReactSite/static/js/main.7060f170.chunk.js",
+    "main.js.map": "/ReactSite/static/js/main.7060f170.chunk.js.map",
     "runtime-main.js": "/ReactSite/static/js/runtime-main.935cc7be.js",
     "runtime-main.js.map": "/ReactSite/static/js/runtime-main.935cc7be.js.map",
     "static/css/2.3406d7a6.chunk.css": "/ReactSite/static/css/2.3406d7a6.chunk.css",
@@ -14,6 +14,7 @@
     "static/css/2.3406d7a6.chunk.css.map": "/ReactSite/static/css/2.3406d7a6.chunk.css.map",
     "static/css/main.431db40b.chunk.css.map": "/ReactSite/static/css/main.431db40b.chunk.css.map",
     "static/js/2.fc137a5c.chunk.js.LICENSE.txt": "/ReactSite/static/js/2.fc137a5c.chunk.js.LICENSE.txt",
+    "static/media/hire.e0fcc2db.png": "/ReactSite/static/media/hire.e0fcc2db.png",
     "static/media/home.cc1c76af.png": "/ReactSite/static/media/home.cc1c76af.png",
     "static/media/logo.d45e3b5c.png": "/ReactSite/static/media/logo.d45e3b5c.png",
     "static/media/uow.4353f2e4.gif": "/ReactSite/static/media/uow.4353f2e4.gif"
@@ -23,6 +24,6 @@
     "static/css/2.3406d7a6.chunk.css",
     "static/js/2.fc137a5c.chunk.js",
     "static/css/main.431db40b.chunk.css",
-    "static/js/main.1ebfe834.chunk.js"
+    "static/js/main.7060f170.chunk.js"
   ]
 }

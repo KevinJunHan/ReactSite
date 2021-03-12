@@ -32,33 +32,34 @@ class Nav extends React.Component {
 				{/* <img className="logo" src={logo} alt="logo" /> */}
 				<ul className="nav-links">
 					<NavLink
-						className="abt"
 						style={navStyle}
 						to="/About"
 						activeClassName="selected"
 						activeStyle={{
-							border: "2px dotted bisque",
+							border: "2px double bisque",
 							fontWeight: "bold",
 							color: "bisque",
 						}}
 					>
 						<li>
-							About_Me
-							<img className="user" src={user} alt="user" />
+							<span className="c">
+								About_Me
+								<img className="user" src={user} alt="user" />
+							</span>
 						</li>
 					</NavLink>
 					<NavLink
-						className="abt"
+						className="portfolio"
 						style={navStyle}
 						to="/Portfolio"
 						activeClassName="selected"
 						activeStyle={{
-							border: "2px dotted bisque",
+							border: "2px double bisque",
 							fontWeight: "bold",
 							color: "bisque",
 						}}
 					>
-						<li>
+						<li className="c">
 							Portfolio
 							<img className="folder" src={folder} alt="folder" />
 						</li>
@@ -69,9 +70,33 @@ class Nav extends React.Component {
             <img className="contract" src={contract} alt="contract" />
           </li> */}
 					<NavLink
-						className="abt"
+						className="hireme"
 						style={navStyle}
 						to="/HireMe"
+						activeClassName="selected"
+						activeStyle={{
+							border: "4px double red",
+							fontWeight: "bold",
+							color: "bisque",
+							textDecoration: "line-through",
+						}}
+					>
+						<li
+							className="c"
+							style={{
+								color: "red",
+								opacity: "0.4",
+							}}
+						>
+							Hire Me
+							<img className="contract" src={contract} alt="contract" />
+						</li>
+					</NavLink>
+
+					{/* <NavLink
+						className="abt"
+						style={navStyle}
+						to="/Profile"
 						activeClassName="selected"
 						activeStyle={{
 							border: "2px dotted bisque",
@@ -80,10 +105,10 @@ class Nav extends React.Component {
 						}}
 					>
 						<li>
-							Hire Me
+							Profile
 							<img className="contract" src={contract} alt="contract" />
 						</li>
-					</NavLink>
+					</NavLink> */}
 				</ul>
 			</nav>
 		);

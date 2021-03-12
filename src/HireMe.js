@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { useSpring, animated, interpolate } from "react-spring";
 import Form from "./Form.js";
 import { Alert, Badge, Button } from "react-bootstrap";
+import hire from "./Images/hire.png";
 
 function AlertDismissible() {
-	const [show, setShow] = useState(true);
+	const [show, setShow] = useState(false);
 
 	return (
 		<>
@@ -18,7 +19,7 @@ function AlertDismissible() {
 				<p>
 					Employment Status:
 					<strong>
-						<nobr style={{ color: "red" }}> Not looking</nobr>
+						<nobr style={{ color: "red" }}>-</nobr>
 					</strong>
 				</p>
 				<p>
@@ -98,10 +99,17 @@ function HireMe() {
 				Hi there! Let me know <strong>what's on your mind </strong>
 			</Alert>
 			<AlertDismissible />
+
 			<div style={{ width: "410px" }}>
 				<animated.h1 style={props} className="header">
 					Hire Me
 				</animated.h1>
+				<img
+					className="hire"
+					src={hire}
+					alt="hire"
+					style={{ width: "300px", height: "200px" }}
+				/>
 				<h2 style={{ paddingLeft: "40px" }} className="genericText">
 					Connect with me here or @
 					<span style={{ color: "red" }}> KevinJunHan@outlook.com </span>

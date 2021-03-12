@@ -4,6 +4,46 @@ import { useSpring, animated, interpolate } from "react-spring";
 import Form from "./Form.js";
 import { Alert, Badge, Button } from "react-bootstrap";
 
+function AlertDismissible() {
+	const [show, setShow] = useState(true);
+
+	return (
+		<>
+			<Alert
+				style={{ marginBottom: "0px", width: "100%" }}
+				show={show}
+				variant="light"
+			>
+				<Alert.Heading>Notes:</Alert.Heading>
+				<p>
+					Employment Status:
+					<strong>
+						<nobr style={{ color: "red" }}> Not looking</nobr>
+					</strong>
+				</p>
+				<p>
+					Location: <b>Singapore</b>
+				</p>
+				<hr />
+				<div className="d-flex ">
+					<Button onClick={() => setShow(false)} variant="outline-success">
+						Collapse all
+					</Button>
+				</div>
+			</Alert>
+
+			{!show && (
+				<Button
+					style={{ backgroundColor: "red" }}
+					onClick={() => setShow(true)}
+				>
+					?
+				</Button>
+			)}
+		</>
+	);
+}
+
 class Toggle extends React.Component {
 	constructor(props) {
 		super(props);
@@ -54,9 +94,10 @@ function HireMe() {
 
 	return (
 		<div>
-			<Alert variant="success" style={{ width: "100%" }}>
-				Hi there! Let me know <strong>what's on your mind</strong>
+			<Alert variant="info" style={{ width: "100%", marginBottom: "0px" }}>
+				Hi there! Let me know <strong>what's on your mind </strong>
 			</Alert>
+			<AlertDismissible />
 			<div style={{ width: "410px" }}>
 				<animated.h1 style={props} className="header">
 					Hire Me
@@ -65,8 +106,6 @@ function HireMe() {
 					Connect with me here or @
 					<span style={{ color: "red" }}> KevinJunHan@outlook.com </span>
 					<p style={{ paddingTop: "18px" }}>
-						{/* Current Status:{" "}
-						<span style={{ color: "green" }}>Happily employed</span> */}
 						<p
 							style={{
 								paddingTop: "10px",

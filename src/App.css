@@ -1,15 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
 
-::selection {
-	background-color: rgb(242, 230, 255);
+* {
+	margin: 0;
 }
 
 .App {
 	text-align: start;
 }
-* {
-	margin: 0;
+
+::selection {
+	background-color: rgb(242, 230, 255);
+}
+
+.header {
+	text-decoration: underline;
+	letter-spacing: 8px;
+	padding-top: 20px;
+	padding-left: 40px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 70px;
+	color: bisque;
+	cursor: crosshair;
+}
+
+.header:hover {
+	padding-top: 20px;
+	padding-left: 40px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 70px;
+	color: gold;
+}
+
+#basic-navbar-nav {
+	font-family: "Montserrat", sans-serif;
+	background-color: #f8f9fa;
+	font-size: 18px;
+	padding-left: 50px;
+	padding-right: 0;
+}
+
+.brand {
+	animation-name: quirkyLogo;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-duration: 0.2s;
+	animation-direction: alternate-reverse;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+@keyframes quirky {
+	0% {
+		transform: translateY(-2px) skewX(-10deg);
+	}
+
+	100% {
+		transform: translateY(2px) skewX(0deg);
+	}
+}
+
+@keyframes quirkyLogo {
+	100% {
+		transform: translateX(15px);
+	}
+}
+
+@media (max-width: 350px) {
+	.brand {
+		animation-name: quirkyLonger;
+	}
+}
+
+.NavBar {
+	font-family: "Montserrat", sans-serif;
+}
+
+.animateK {
+	color: black;
+	animation-name: animationK;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-direction: alternate-reverse;
+}
+
+.animateI {
+	display: inline-block;
+	animation: animationI 3s cubic-bezier(0.8, 0.2, 0.2, 0.8);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes animationK {
+	0% {
+		color: black;
+	}
+
+	12.5% {
+		color: rgb(32, 32, 32);
+	}
+
+	25% {
+		color: rgb(64, 64, 64);
+	}
+
+	37.5% {
+		color: rgb(96, 96, 96);
+	}
+
+	50% {
+		color: rgb(128, 128, 128);
+	}
+
+	67.5% {
+		color: rgb(160, 160, 160);
+	}
+
+	75% {
+		color: rgb(192, 192, 192);
+	}
+
+	87.5% {
+		color: rgb(222, 222, 222);
+	}
+
+	100% {
+		color: rgb(222, 222, 222);
+		/* color: rgb(255, 255, 255); */
+	}
+}
+
+@keyframes animationI {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+.AboutMeIntroBox {
+	background: linear-gradient(60deg, #ccffff, #ffcccc);
+	border-radius: 20%;
+	position: relative;
+	top: -200px;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	animation: transitionStart 1s ease;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.AboutMeEduBox {
+	font-family: "Montserrat", sans-serif;
+	background-color: bisque;
+	position: relative;
+	top: -200px;
+	height: 800px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	animation: transitionStart 1s ease;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.skillz {
+	margin-top: 1vh;
+}
+
+@keyframes transitionStart {
+	from {
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+ul {
+	list-style: none;
 }
 
 button {
@@ -30,11 +207,11 @@ button {
 }
 
 .playerOnLeft {
-	padding-top: 20px;
+	padding-top: 0px;
 }
 
 .playerOnRight {
-	padding-top: 20px;
+	padding-top: 0px;
 }
 
 .aboutBox {
@@ -66,7 +243,7 @@ button {
 	cursor: default;
 	width: 350px;
 	height: 600px;
-	background: #012340;
+	background: #2f1e2e;
 
 	/* box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2); */
 }
@@ -149,7 +326,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	height: 15vh;
-	background: #012340;
+	background: #ffffff;
 	color: rgb(97, 97, 97);
 }
 
@@ -166,57 +343,47 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
+	background: #ff3232;
+	background: linear-gradient(to bottom, white 50%, #2f1e2e 50%);
+	background-size: 1px 300px;
+	background-position: top;
+	transition: all 0.4s linear;
 }
 
-.nav-links .c::before {
+.nav-links:hover {
+	background-position: bottom;
+}
+
+/* .nav-links .c::before {
 	float: left;
 	opacity: 0;
 	content: "\00bb";
 	text-decoration: none;
-	transition: 2s;
-}
+	transition: opacity 2s ease;
+} */
 
-.nav-links .c::after {
-	padding-left: 5px;
-	float: right;
-	opacity: 0;
-	content: "\00ab";
-	text-decoration: none;
-	transition: 2s;
+.nav-links .c::before {
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	opacity: 1;
+	width: 16%;
+	height: 2px;
+	background-color: #2f1e2e;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.25s ease;
 }
 
 .nav-links .c:hover::before {
-	transition: 1s;
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+/* .nav-links .c:hover::after {
 	opacity: 1;
-}
-
-.nav-links .c:hover::after {
 	transition: 1s;
-	opacity: 1;
-}
-
-.header {
-	text-decoration: underline;
-	letter-spacing: 8px;
-	padding-top: 20px;
-	padding-left: 40px;
-	font-family: "Montserrat", sans-serif;
-	font-size: 70px;
-	color: bisque;
-	cursor: crosshair;
-}
-
-.header:hover {
-	padding-top: 20px;
-	padding-left: 40px;
-	font-family: "Montserrat", sans-serif;
-	font-size: 70px;
-	color: gold;
-}
-
-ul {
-	list-style: none;
-}
+} */
 
 .csg {
 	padding: 0;
@@ -247,6 +414,173 @@ ul {
 .rea {
 	height: 50px;
 	width: 50px;
+}
+
+.IntroText {
+	opacity: 0;
+	margin-left: -500px;
+	padding-top: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 28px;
+	font-size: 5vh;
+	color: #012340;
+	animation: op 1s linear, slide 1.5s cubic-bezier(0.1, 1, 0.3, 2);
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.IntroText2 {
+	opacity: 0;
+	margin-left: 0px;
+	padding-top: 20px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 28px;
+	font-size: 5vh;
+	color: #012340;
+	animation: op 1s linear, animationSpinIn 3s infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.IntroTextJump {
+	position: relative;
+	display: inline-block;
+
+	animation: animationVibrate 0.33s infinite;
+	animation-direction: alternate;
+	animation-delay: 1.8s;
+}
+.shine {
+	position: relative;
+	display: inline-block;
+}
+
+.shine2 {
+	position: relative;
+	display: inline-block;
+}
+
+.shine2::before {
+	z-index: -1;
+	opacity: 0;
+	position: absolute;
+	content: "";
+	bottom: 2vh;
+	width: 100%;
+	background-color: #86a7ad;
+	height: 2vh;
+	animation: shine2 2s infinite;
+	animation-direction: alternate-reverse;
+	animation-delay: 2.46s;
+}
+
+.shine::before {
+	box-shadow: 10px 10px;
+	z-index: -1;
+	opacity: 0;
+	position: absolute;
+	content: "";
+	bottom: -0.5vh;
+	width: 50%;
+	background-color: #ffffff;
+	height: 2vh;
+	animation: shine 2s infinite;
+	animation-direction: alternate-reverse;
+	animation-delay: 2.46s;
+}
+
+.IntroTextJump::before {
+	opacity: 0;
+	position: absolute;
+	content: "";
+	bottom: -0.3vh;
+	width: 95%;
+	background-color: #012340;
+	height: 1vh;
+	animation: boop 0.66s infinite;
+	animation-delay: 2.46s;
+}
+
+@keyframes boop {
+	0% {
+		transform: scaleY(1) translateY(-4px);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scaleY(0.1) translateY(4px);
+		opacity: 0;
+	}
+}
+
+@keyframes shine {
+	0% {
+		transform: scaleY(1) translateX(-1vw);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scaleY(1) translateX(8vw);
+		opacity: 1;
+	}
+}
+
+@keyframes shine2 {
+	0% {
+		transform: scaleY(2) translateY(1vh);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scaleY(1) translateY(2vh);
+		opacity: 0.6;
+	}
+}
+
+@keyframes animationVibrate {
+	from {
+		bottom: 0px;
+	}
+	to {
+		bottom: 5px;
+	}
+}
+
+@keyframes animationSpinIn {
+	0% {
+		opacity: 0;
+		transform: rotateX(180deg);
+	}
+	70% {
+		opacity: 1;
+		transform: rotateX(360deg);
+	}
+
+	100% {
+		opacity: 0;
+		transform: rotateX(360deg);
+	}
+}
+
+@keyframes slide {
+	from {
+	}
+
+	to {
+		margin-left: 0;
+	}
+}
+
+@keyframes op {
+	from {
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 .genericText {
@@ -321,11 +655,9 @@ input[type="email"] {
 .containerm::after {
 	content: "";
 	opacity: 0.6;
-	background: bisque;
-	/* background: rgb(26, 31, 41) url("./Images/logo.png") no-repeat fixed top; */
+	background: linear-gradient(cyan, gold);
 	background-blend-mode: luminosity;
 	background-size: cover;
-	border-radius: 20px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -355,12 +687,12 @@ body {
 
 .footer {
 	height: 70px;
-	background: #012340;
+	background: #2f1e2e;
 	text-align: center;
 }
 
 .footer:hover {
-	background: #03437c;
+	background: #ed5069;
 }
 
 .row {

@@ -27,7 +27,7 @@ function About() {
 	const props = useSpring({
 		to: [
 			{ opacity: 1, color: "bisque" },
-			{ opacity: 0.5, color: "brown" },
+			{ opacity: 0.5, color: "#EB3A53" },
 		],
 		from: { opacity: 1, color: "slategrey" },
 	});

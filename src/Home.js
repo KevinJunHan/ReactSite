@@ -15,7 +15,7 @@ function Home() {
 	});
 
 	return (
-		<div className="container">
+		<div className="containerm">
 			<div className="special">
 				<animated.h1 style={props} className="header">
 					Welcome

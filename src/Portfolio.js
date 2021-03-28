@@ -25,7 +25,7 @@ function Portfolio() {
 	const props = useSpring({
 		to: [
 			{ opacity: 1, color: "bisque" },
-			{ opacity: 0.5, color: "brown" },
+			{ opacity: 0.5, color: "#EB3A53" },
 		],
 		from: { opacity: 1, color: "slategrey" },
 	});
@@ -62,8 +62,8 @@ function Portfolio() {
 						Compilation
 					</Badge>
 					<ReactPlayer
-						width="400px"
-						height="300px"
+						width={width > 843 ? "400px" : "330px"}
+						height="200px"
 						muted="true"
 						playing="true"
 						url="www.youtube.com/watch?v=tqNft0iUPHY"
@@ -83,8 +83,8 @@ function Portfolio() {
 						New
 					</Badge>
 					<ReactPlayer
-						width="400px"
-						height="300px"
+						width={width > 843 ? "400px" : "330px"}
+						height="200px"
 						muted="true"
 						playing="true"
 						url="www.youtube.com/watch?v=FiFWPWR3mLs"

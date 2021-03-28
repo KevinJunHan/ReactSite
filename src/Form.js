@@ -51,7 +51,7 @@ function Form() {
 								marginTop: "15px",
 								paddingTop: "20px",
 								paddingLeft: "15px",
-								width: "400px",
+								width: "350px",
 								height: "150px",
 							}}
 						/>
